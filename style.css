@@ -1,49 +1,57 @@
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f4f4f4;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.calculator {
-	margin: 50px auto;
-	padding: 20px;
-	background-color: #fff;
-	box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
 }
 
-.display {
-	margin-bottom: 10px;
+p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
-.display input[type="text"] {
-	width: 100%;
-	padding: 10px;
-	font-size: 24px;
-	border: none;
-	background-color: #eee;
+#question {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
-.keys {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 10px;
+#choices {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-.keys button {
-	padding: 10px;
-	font-size: 24px;
-	border: none;
-	background-color: #ccc;
-	cursor: pointer;
+#choices button {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #eee;
 }
 
-.ads {
-	margin: 20px auto;
-	width: 100%;
-	height: 100px;
-	background-color: #eee;
-	text-align: center;
+#choices button:hover {
+  background-color: #ddd;
 }
-.name {
-	text-align: center;
-	margin-top: 20px;
+
+#submit {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+}
+
+#submit:hover {
+  background-color: #d00;
+}
+
+#result {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
