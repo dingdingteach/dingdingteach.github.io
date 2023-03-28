@@ -17,5 +17,5 @@ btn.addEventListener('click', function() {
     
     score = score % 101;
     
-    result.innerHTML = `The compatibility score for ${name1} and ${name2} is ${score}/100.`;
+    result.innerHTML = `친밀도 점수 : ${name1} 님과 ${name2} 님의 친밀도 점수는 ${score} 입니다.`;
 });
