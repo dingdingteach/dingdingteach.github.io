@@ -1,19 +1,21 @@
-const articlesElement = document.getElementById('articles');
+const btn = document.getElementById('btn');
+const result = document.getElementById('result');
 
-fetch('https://news.naver.com/main/list.nhn?mode=LS2D&mid=shm&sid1=101&sid2=259')
-  .then(response => response.text())
-  .then(html => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const articles = doc.querySelectorAll('.section_list_ranking li');
-
-    articles.forEach(article => {
-      const title = article.querySelector('.ranking_headline a').textContent;
-      const date = article.querySelector('.ranking_office').textContent;
-
-      const li = document.createElement('li');
-      li.innerHTML = `<span class="title">${title}</span><br><span class="date">${date}</span>`;
-      articlesElement.appendChild(li);
-    });
-  })
-  .catch(error => console.error(error));
+btn.addEventListener('click', function() {
+    const name1 = document.getElementById('name1').value;
+    const name2 = document.getElementById('name2').value;
+    
+    let score = 0;
+    
+    for(let i = 0; i < name1.length; i++) {
+        score += name1.charCodeAt(i);
+    }
+    
+    for(let i = 0; i < name2.length; i++) {
+        score += name2.charCodeAt(i);
+    }
+    
+    score = score % 101;
+    
+    result.innerHTML = `The compatibility score for ${name1} and ${name2} is ${score}/100.`;
+});
