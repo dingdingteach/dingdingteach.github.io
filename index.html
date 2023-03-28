@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>경제기사 TOP5</title>
-	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>이름궁합</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="container">
-          <h1>경제기사 TOP5</h1>
-	    <ul id="articles"></ul>
-	    <script src="script.js"></script>
-        </div>
+	<h1>챗GPT가 알려주는 <br>이름 궁합 친밀도 게임!!</h1>
+	<form>
+		<label for="name1">첫번째 사람 이름 :</label>
+		<input type="text" id="name1" name="name1"><br>
+		<label for="name2">두번째 사람 이름 :</label>
+		<input type="text" id="name2" name="name2"><br>
+		<button type="button" id="btn">지금 바로 궁합 점수 gogo</button>
+	</form>
 	<div class="ads">
 		<ins class="kakao_ad_area" style="display:none;"
-data-ad-unit = "DAN-sPSGMpQo0OxKPZKT"
-data-ad-width = "320"
-data-ad-height = "100"></ins>
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		data-ad-unit = "DAN-sPSGMpQo0OxKPZKT"
+		data-ad-width = "320"
+		data-ad-height = "100"></ins>
+		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 	</div>
-	<div class="name">
-		<p>딩딩과 챗GPT 콜라보 게임</p>
-	</div>
+  <div>
+  <h3>챗GPT와 딩딩 선생의 콜라보 게임!<br>재미로 보는 게임이니 사이좋게 지내보아요!</h3>
+  </div>
+  <div id="result"></div>
 	<script src="script.js"></script>
 </body>
 </html>
