@@ -17,5 +17,5 @@ btn.addEventListener('click', function() {
     
     score = score % 101;
     
-    result.innerHTML = `친밀도 점수 : ${name1} 님과 ${name2} 님의 <br>친밀도 점수는 ${score} 입니다.`;
+    result.innerHTML = `친밀도 점수 : <br>${name1} 님과 ${name2} 님 <br>친밀도 점수는 ${score}점 입니다.`;
 });
